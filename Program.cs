@@ -26,3 +26,4 @@ foreach (Course c in anna.Courses)
 }
 
 math.RollCall();
+Console.WriteLine(math);

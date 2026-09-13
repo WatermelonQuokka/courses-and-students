@@ -40,4 +40,12 @@ class Course(string name, int capacity)
         }
     }
 
+    // shows the name of the course
+    // how many students are enrolled 
+    // out of total capacity of the course
+    public override string ToString()
+    {
+        return $"{Name} ({Students.Count}/{Capacity} spots)";
+    }
+
 }
