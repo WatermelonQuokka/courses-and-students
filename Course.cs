@@ -9,10 +9,14 @@ class Course(string name, int capacity)
     //if not add student to course and add course to student
     public void Enroll(Student student)
     {
-        if(!Students.Contains(student))
+        if(!Students.Contains(student) && Students.Count < Capacity)
         {
             Students.Add(student);
             student.Courses.Add(this);
+        }
+        else
+        {
+            Console.WriteLine("Sorry, this course is full.");
         }
     }
 }

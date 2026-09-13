@@ -11,13 +11,14 @@ Student eric = new("Eric Ericson");
 Student filip = new("Filip Filipson");
 
 math.Enroll(anna);
-eng.Enroll(anna);
+anna.Join(eng);
 phys.Enroll(anna);
 sport.Enroll(anna);
 math.Enroll(bert);
 math.Enroll(carl);
 math.Enroll(david);
 math.Enroll(eric);
+math.Enroll(filip);
 
 foreach (Course c in anna.Courses)
 {
