@@ -25,7 +25,4 @@ foreach (Course c in anna.Courses)
     Console.WriteLine(c.Name);
 }
 
-foreach (Student c in math.Students)
-{
-    Console.WriteLine(c.Name);
-}
+math.RollCall();

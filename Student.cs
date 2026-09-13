@@ -3,8 +3,16 @@ class Student(string name)
     public string Name = name;
     public List<Course> Courses = [];
 
+
+    // same purpose as course enroll which is 
+    // why its calling the enroll method
     public void Join(Course course)
     {
         course.Enroll(this);
+    }
+    // similar as above
+    public void Leave(Course course)
+    {
+        course.Remove(this);
     }
 }
