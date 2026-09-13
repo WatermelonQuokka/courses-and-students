@@ -20,10 +20,14 @@ math.Enroll(david);
 math.Enroll(eric);
 math.Enroll(filip);
 
-foreach (Course c in anna.Courses)
-{
-    Console.WriteLine(c.Name);
-}
-
 math.RollCall();
+anna.Schedule();
 Console.WriteLine(math);
+Console.WriteLine(anna);
+bert.Leave(math);
+math.RollCall();
+filip.Join(eng);
+Console.WriteLine(eng);
+eng.RollCall();
+Console.WriteLine(filip);
+filip.Schedule();
